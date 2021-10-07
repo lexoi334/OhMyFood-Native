@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***********************************************************
+ Partie haute du site contenant le logo et la localisation *
+ ***********************************************************/
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logo {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+header img {
+    width: 180px;
+    height: 30px;
+    margin: auto;
+    
+}
+
+.lieux {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    background-color: hsl(0, 0%, 94%);
+    height: 62px;
+}
+
+.lieux a {
+    margin: auto;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    padding: 15px 0;
+    width: 64%;
+    margin: 25px auto 0px;
+}
+
+/***************************************************
+ Partie (topContent) contenant le bouton "explore" *
+ ***************************************************/
+
+.topContent {
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#intro{
+    color: grey;
+}
+
+.topContent h1, .topContent p {
+    margin:15px auto;
+    width: 50%;
+
+}
+
+h2 {
+    margin:15px auto;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button {
+    display: flex;
+    color: white;
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 15px auto;   
+    background: rgb(235,36,168);
+    background: linear-gradient(180deg, rgba(235,36,168,1) 0%, rgba(129,10,255,1) 100%); 
+    box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
+-webkit-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
+-moz-box-shadow: 5px 5px 5px 1px rgba(0,0,0,0.15);
+}
+
+.button:hover {
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.75);
+}
+
+.button p {
+    margin: auto;
+}
+
+/**********************************************************************
+Partie centrale : mid content fonctionnement par étapes number + icon *
+***********************************************************************/
+
+.midContent {
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    background-color: white;
+}
+
+.etapeBar {
+    width: 70%;
+    display: flex;
+    margin: 15px auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.fonctionnement {
+    display: flex;
+    width: 370px;
+    height: 60px;
+    position: relative;
+    margin: 10px 0 10px 0;
+    
+    
+}
+
+.rond {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #751aff;
+    color: white;
+    display: flex;
+    float: left;
+    margin: auto 0;
+    z-index: 1;
+    
+}
+
+.rond p {
+    margin: auto;
+}
+
+.etape {
+    background-color: hsl(0, 0%, 96%);
+    width: 95%;
+    height: 60px;
+    position: absolute;
+    border-radius: 15px;
+    left: 10px;
+    display: flex;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.etape:hover {
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.5);
+}
+
+.etape p {
+    margin: auto 0;
+}
+
+.etape img {
+    width: 16px;
+    height: 16px;
+    margin: auto 20px auto 30px;
+}
+
+/**************************************************
+Partie basse : Bot content avec les card de resto *
+***************************************************/
+
+.botContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.restaurant {
+    width: 40%;
+    min-width: 15rem;
+    max-width: 30rem;
+    height: 200px;
+    position: relative;
+    border-radius: 15px;
+    margin: 0px auto 25px;
+}
+
+.topResto {
+    width: 100%;
+    height: 70%;
+}
+
+.restaurant img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.botResto {
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    z-index: 1;
+    border-bottom-right-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+}
+
+.botResto p, .botResto h4 {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+}
+
+.restaurant:hover {
+    
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+}
+
+.heart {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 2;
+    right: 15px;
+    bottom: 15px;
+}
+
+.heartSelected {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    z-index: 2;
+
+}
+
+.hidden {
+    display: none;
+}
+
+/**************
+footer + list *
+***************/
+
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 25%);
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    width: 62%;
+    margin: 5px auto 20px;
+    list-style-type: none;
+    color: white;
+}
+
+li {
+    margin: 5px 0px;
+}
+
+li img {
+    width: 16px;
+    height: 16px;
+    filter: invert(100%); 
+  -webkit-filter:invert(100%); 
+}
+
+#logoList {
+    width: 95px;
+    height: 20px;
+    margin-top: 15px;
+    filter: invert(100%); 
+  -webkit-filter:invert(100%); 
+}
+
+.logoBot {
+    width: 62%;
+    margin: auto;
+}
+
+li a {
+    color: white;
+}
+
+
+
+/****************
+* media queries *
+*****************/
+
+
+@media (max-width: 768px) {
+    .cards {
+      width: 100%;
+    }
+
+    .restaurant {
+        width: 90%;
+        min-width: none;
+    }
+  }
+
+
+@media (max-width: 580px) {
+    h3 {
+        width: 100%;
+        margin-left: 15px;
+    }
+}
